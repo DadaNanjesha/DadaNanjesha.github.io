@@ -1,35 +1,26 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Initialize AOS (Animate On Scroll)
-    AOS.init({
-        duration: 1000,
-        once: true,
-        easing: 'ease-in-out'
+// Smooth scrolling is handled by CSS (scroll-behavior: smooth)
+// Multi-step form functionality for the call booking section:
+let currentStep = 0;
+const formSteps = document.querySelectorAll('.form-step');
+
+function showStep(step) {
+    formSteps.forEach((el, index) => {
+        el.classList.toggle('active', index === step);
     });
+}
 
-    // Smooth scroll for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Increment the current step of the form and show the next step
+ * @return {void}
+ */
+/******  28b9aa86-ec5f-4e3e-ae00-75bfeb5fb97b  *******/
+function nextStep() {
+    if (currentStep < formSteps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+    }
+}
 
-    // Add active class to current section in view
-    window.addEventListener('scroll', function () {
-        let fromTop = window.scrollY;
-
-        document.querySelectorAll('section').forEach(section => {
-            let sectionTop = section.offsetTop - 100;
-            let sectionHeight = section.offsetHeight;
-            let id = section.getAttribute('id');
-
-            if (fromTop >= sectionTop && fromTop < sectionTop + sectionHeight) {
-                document.querySelector(`a[href="#${id}"]`).classList.add('active');
-            } else {
-                document.querySelector(`a[href="#${id}"]`).classList.remove('active');
-            }
-        });
-    });
-});
+// Initialize first step
+showStep(currentStep);
