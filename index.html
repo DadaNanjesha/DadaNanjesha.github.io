@@ -1,222 +1,209 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Dada Nanjesha | Senior Software & Data Engineer</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-ku5S9NLSmuqgPecSAXUeQz6O9GL8ZdFEGYn8H/8YhWQXH6ErYPso9P+W9Nf5NE+R7pU9FBVtP4Kc5pPZ8Y9Zug=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- AOS CSS -->
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-<!-- Custom CSS -->
-<link rel="stylesheet" href="assets/css/style.css" />
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dada Nanjesha | Senior Software & Data Engineer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-ku5S9NLSmuqgPecSAXUeQz6O9GL8ZdFEGYn8H/8YhWQXH6ErYPso9P+W9Nf5NE+R7pU9FBVtP4Kc5pPZ8Y9Zug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
 
 <body>
-<!-- HEADER -->
-<header class="header">
-    <nav class="nav container">
-    <div class="logo">Dada Nanjesha</div>
-    <ul class="nav-menu">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    </nav>
-</header>
-
-<!-- HERO SECTION -->
-<section id="hero" class="hero">
-    <div class="container hero-content" data-aos="fade-up">
-    <img src="assets/images/profile.png" alt="Dada Nanjesha Profile" class="profile-img" />
-    <h1 class="hero-title">Dada Nanjesha</h1>
-    <p class="hero-subtitle">Senior Software Engineer & Cloud Data Specialist</p>
-    <p class="hero-desc">
-        Azure-certified professional building enterprise-scale solutions with 5+ years experience in full-stack development 
-        and cloud data engineering.
-    </p>
-    <div class="hero-badges">
-        <img src="assets/images/azure-certified-badge.png" alt="Microsoft Certified" class="cert-badge" />
-        <img src="assets/images/python-expert-badge.png" alt="Python Expert" class="cert-badge" />
-    </div>
-    <a href="#experience" class="btn hero-btn">View Career Journey</a>
-    </div>
-</section>
-
-<!-- ABOUT SECTION -->
-<section id="about" class="about">
-    <div class="container about-content" data-aos="fade-right">
-    <h2>Professional Profile</h2>
-    <p class="about-summary">
-        Results-driven technical lead specializing in cloud-native application development and big data solutions. 
-        Recognized by Microsoft for Azure architecture excellence with 3 published technical white papers on 
-        distributed systems optimization.
-    </p>
-    <div class="about-points">
-        <div class="point" data-aos="zoom-in" data-aos-delay="100">
-            <i class="fa-solid fa-microchip fa-2x"></i>
-            <h3>Cloud Architect</h3>
-            <p>Designed 15+ Azure-based solutions handling 1M+ daily transactions</p>
-        </div>
-        <div class="point" data-aos="zoom-in" data-aos-delay="200">
-            <i class="fa-solid fa-chart-network fa-2x"></i>
-            <h3>Data Pipeline Expert</h3>
-            <p>Built real-time analytics systems processing 2TB+ daily</p>
-        </div>
-        <div class="point" data-aos="zoom-in" data-aos-delay="300">
-            <i class="fa-solid fa-robot fa-2x"></i>
-            <h3>AI Engineering</h3>
-            <p>Implemented ML ops pipelines for predictive maintenance systems</p>
-        </div>
-    </div>
-    </div>
-</section>
-
-<!-- SKILLS SECTION -->
-<section id="skills" class="skills">
-    <div class="container" data-aos="fade-up">
-    <h2>Technical Expertise</h2>
-    <div class="skills-grid">
-        <div class="skill-item">
-            <i class="fa-brands fa-microsoft skill-badge"></i>
-            <h3>Azure Cloud Services</h3>
-            <p>
-                <span class="skill-badge">Certified:</span> Functions, Synapse, Data Factory<br>
-                <span class="skill-badge">Expertise:</span> ARM Templates, AKS, Cosmos DB
-            </p>
-        </div>
-        <div class="skill-item">
-            <i class="fa-brands fa-python skill-badge"></i>
-            <h3>Python Development</h3>
-            <p>
-                <span class="skill-badge">Libraries:</span> Pandas, NumPy, FastAPI<br>
-                <span class="skill-badge">Tools:</span> Poetry, Pytest, Black
-            </p>
-        </div>
-        <div class="skill-item">
-            <i class="fa-solid fa-database skill-badge"></i>
-            <h3>Data Engineering</h3>
-            <p>
-                <span class="skill-badge">ETL:</span> Apache Spark, Airflow<br>
-                <span class="skill-badge">Warehousing:</span> Snowflake, Delta Lake
-            </p>
-        </div>
-        <div class="skill-item">
-            <i class="fa-solid fa-code-merge skill-badge"></i>
-            <h3>DevOps Practices</h3>
-            <p>
-                <span class="skill-badge">CI/CD:</span> GitHub Actions, Azure DevOps<br>
-                <span class="skill-badge">Infra:</span> Terraform, Kubernetes
-            </p>
-        </div>
-    </div>
-    </div>
-</section>
-
-<!-- PROJECTS SECTION -->
-<section id="projects" class="projects">
-    <div class="container" data-aos="fade-up">
-    <h2>Featured Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card" data-aos="flip-left">
-            <div class="project-header">
-                <i class="fa-brands fa-github"></i>
-                <h3>Real-time Analytics Platform</h3>
-            </div>
-            <p class="project-desc">
-                Built with Azure Functions and Kafka, processing 50K events/sec with <2ms latency. 
-                Implements auto-scaling and fault-tolerant architecture.
-            </p>
-            <div class="project-tech">
-                <span class="tech-pill">Python</span>
-                <span class="tech-pill">Azure Event Hubs</span>
-                <span class="tech-pill">Apache Flink</span>
-            </div>
-            <a href="https://github.com/DadaNanjesha/realtime-analytics-platform" target="_blank" class="project-link">
-                Explore Codebase <i class="fa-solid fa-arrow-up-right"></i>
-            </a>
-        </div>
-        <!-- Additional project cards follow same structure -->
-    </div>
-    </div>
-</section>
-
-<!-- EXPERIENCE SECTION -->
-<section id="experience" class="experience">
-    <div class="container">
-    <h2 data-aos="fade-up">Professional Journey</h2>
-    <div class="experience-timeline">
-        <div class="exp-item" data-aos="fade-right">
-            <div class="exp-header">
-                <h3>Lead Software Engineer</h3>
-                <span class="exp-company">Emerson Automation Solutions</span>
-                <span class="exp-dates">2021-Present</span>
-            </div>
-            <ul class="exp-responsibilities">
-                <li>Architected cloud migration strategy reducing infra costs by 40%</li>
-                <li>Led development of IoT data platform handling 1M+ devices</li>
-                <li>Mentored 5 junior engineers in cloud best practices</li>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="nav container">
+            <div class="logo">Dada Nanjesha</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <!-- Additional experience items -->
-    </div>
-    </div>
-</section>
+    </header>
 
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact">
-    <div class="container" data-aos="fade-up">
-    <div class="contact-grid">
-        <div class="contact-info">
-            <h2>Connect With Me</h2>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/dadananjeshags" class="social-link linkedin">
-                    <i class="fa-brands fa-linkedin"></i> /dadananjeshags
-                </a>
-                <a href="https://github.com/DadaNanjesha" class="social-link github">
-                    <i class="fa-brands fa-github"></i> @DadaNanjesha
-                </a>
-                <div class="contact-email">
-                    <i class="fa-solid fa-envelope"></i> dadananjeshags@example.com
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-content container">
+            <img src="assets/images/profile.png" alt="Dada Nanjesha Profile" class="profile-img">
+            <h1 class="hero-title">Dada Nanjesha</h1>
+            <p class="hero-subtitle">Senior Software Engineer & Cloud Data Specialist</p>
+            <p class="hero-desc">
+                Azure-certified professional building enterprise-scale solutions with 5+ years experience in
+                full-stack development and cloud data engineering.
+            </p>
+            <a href="#experience" class="hero-btn">View Career Journey</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="about-content container">
+            <h2>About Me</h2>
+            <p>Results-driven technical lead specializing in cloud-native application development and big data
+                solutions. Recognized by Microsoft for Azure architecture excellence with 3 published technical white
+                papers on distributed systems optimization.</p>
+
+            <div class="about-points">
+                <div class="point">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Architect</h3>
+                    <p>Designed 15+ Azure-based solutions handling 1M+ daily transactions</p>
+                </div>
+                <div class="point">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Pipeline Expert</h3>
+                    <p>Built real-time analytics systems processing 2TB+ daily</p>
+                </div>
+                <div class="point">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Engineering</h3>
+                    <p>Implemented ML ops pipelines for predictive maintenance systems</p>
                 </div>
             </div>
         </div>
-        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required />
-            </div>
-            <div class="form-group">
-                <input type="email" name="_replyto" placeholder="Email Address" required />
-            </div>
-            <div class="form-group">
-                <textarea name="message" placeholder="How can I help you?" required></textarea>
-            </div>
-            <button type="submit" class="btn">
-                Send Message <i class="fa-solid fa-paper-plane"></i>
-            </button>
-        </form>
-    </div>
-    </div>
-</section>
+    </section>
 
-<footer class="footer">
-    <div class="container footer-container">
-    <p class="copyright">&copy; 2025 Dada Nanjesha. All rights reserved.</p>
-    <div class="footer-links">
-        <a href="https://dadananjeshags.onepage.me/" target="_blank">Portfolio</a>
-        <a href="#privacy">Privacy Policy</a>
-        <a href="https://medium.com/@dadananjeshags" target="_blank">Technical Blog</a>
-    </div>
-    </div>
-</footer>
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <div class="skills-content container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Pandas, NumPy, Scikit-learn</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                    <p>PostgreSQL, MySQL</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <p>Spring Framework, Hibernate</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>AWS, Azure, GCP</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Data Engineering</h3>
+                    <p>Spark, Hadoop, Kafka</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- GITHUB PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="projects-content container">
+            <h2>GitHub Projects</h2>
+            <div class="projects-grid" id="github-projects">
+                <!-- GitHub projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience">
+        <div class="experience-content container">
+            <h2>Experience</h2>
+            <div class="experience-timeline">
+                <div class="exp-item">
+                    <h3>Senior Software Engineer</h3>
+                    <h4>Emerson Automation Solutions</h4>
+                    <p>Led the development of cloud-based solutions for industrial automation, focusing on data
+                        processing and machine learning applications.</p>
+                </div>
+                <div class="exp-item">
+                    <h3>Data Engineer</h3>
+                    <h4>Random Trees</h4>
+                    <p>Designed and implemented data pipelines for large-scale data analytics projects, working with
+                        various data sources and technologies.</p>
+                </div>
+                <!-- Add more experience items based on your LinkedIn profile -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="contact-content container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+        <p class="copyright">&copy; 2025 Dada Nanjesha. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://dadananjeshags.onepage.me/" target="_blank">Portfolio</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="https://medium.com/@dadananjeshags" target="_blank">Technical Blog</a>
+        </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Function to fetch and display GitHub projects
+        async function fetchGitHubProjects() {
+            const githubUsername = 'DadaNanjesha'; // Replace with your GitHub username
+            const projectsContainer = document.getElementById('github-projects');
+
+            try {
+                const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=pushed&direction=desc`);
+                const projects = await response.json();
+
+                // Filter out forked repositories and display only the first 6
+                const ownedProjects = projects.filter(repo => !repo.fork).slice(0, 6);
+
+                ownedProjects.forEach(project => {
+                    const projectCard = document.createElement('div');
+                    projectCard.classList.add('project-card');
+                    projectCard.innerHTML = `
+                        <h3>${project.name}</h3>
+                        <p>${project.description || 'No description provided.'}</p>
+                        <a href="${project.html_url}" target="_blank">View on GitHub</a>
+                    `;
+                    projectsContainer.appendChild(projectCard);
+                });
+            } catch (error) {
+                console.error('Error fetching GitHub projects:', error);
+                projectsContainer.innerHTML = '<p>Failed to load GitHub projects.</p>';
+            }
+        }
+
+        // Call the function to fetch and display GitHub projects when the page loads
+        window.onload = fetchGitHubProjects;
+    </script>
 </body>
+
 </html>
